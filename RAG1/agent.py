@@ -14,7 +14,7 @@ agent = create_agent(
     model=llm,
     tools=[collecting_info],
     system_prompt=system_agent_prompt,
-    response_prompt=Answer,
+    response_format=Answer,
 )
 
 def ask(question: str) -> dict:
